@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/bodySF.ico" />
+    <title>Body Health Gestão
+
+    </title>
+<!--
+
+Template 2097 Pop
+
+http://www.tooplate.com/view/2097-pop
+
+-->
+    <!-- load CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                  <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">                <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>                       <!-- http://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css">                               <!-- Templatemo style -->
+
+
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");</script>
+    
+</head>
+
+<body> 
+    <img src="/img/nova.png" class="logotipo" style="  width: 500px;
+    position: fixed;
+    left: 200px;
+    top: 10px;">
+    <div id="tm-bg"></div>
+    
+    <div id="tm-wrap">
+        
+        <div class="tm-main-content">
+            <div class="container tm-site-header-container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-md-col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
+                        <div class="tm-site-header">
+                            <h1 class="mb-4">Administração</h1><a href="http://localhost:3000/instrutores"><button class="btn btn-info">Gerir Colaboradores</button></a>
+                            <img src="img/underline.png" class="img-fluid mb-4">
+                            <p>Gestão de Negócio -  Studio Body Health</p>        
+                        </div>                        
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        
+                        <div class="content">
+                            <div class="grid">
+                                <div class="grid__item" id="home-link">
+                                    <div class="product">
+                                        <div style="border:1px solid  #325afc" class="tm-nav-link">
+                                            <img style="width: 40%;margin-left:30%; margin-top: -35%" src="/img/renova.png">
+                                            <span style="color: #325afc;" class="tm-nav-text">Renovações
+                                                <br>Nº alunos: {{TOTAL_CLIENTES}}
+                                            </span>
+                                            <div class="product__bg"></div>        
+                                        </div>                                    
+                                       <div class="product__description">
+                                            <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">Renovações</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-12">
+                                                        <p>Lista de alunos ordenada do mais antigo para o mais recente.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                      
+                                                            <div class="row">
+                                                                <div class="form-group col-md-6 col-lg-6 col-xl-6">
+                                                                  <input type="text" id="pesquisaRenova" name="contact_name" class="form-control pesquisaRenova" placeholder="Pesquise aqui..."  />
+                                                                </div>
+                                                           
+                                                            </div>  
+                                                            <div id="table" class="table-editable">
+      
+                                                                            <table class="table  table-responsive-md text-center">
+                                                                                <thead>
+                                                                                <tr>
+                                                                                    <th class="text-center">Nº</th>
+                                                                                    <th class="text-center">Nome</th>
+											<th class="text-center">Telefone</th>
+                                                                                    <th class="text-center">Situação</th>
+                                                                                    <th class="text-center">Vencimento</th>
+                                                                                    <th class="text-center">Horário</th>
+                                                                                    
+                                                                                
+                                                                                </tr>
+                                                                                <style>
+                                                                                
+                                                                                </style>
+                                                                                </thead>
+                                                                                <tbody id="conteudoRenova">
+                                                                                    {{#each CLIENTES}}
+                                                                           
+                                                                                <tr style="color: lightgreen" class="renova">
+                                                                                    <td class="pt-3-half one numero" >{{dataValues.num_identificador}}</td>
+                                                                                    <td class="pt-3-half one nome" >{{dataValues.nome}}</td>
+											<td class="pt-3-half one telefone" >{{dataValues.telefone}}</td>
+                                                                                    <td class="pt-3-half one situacao" >{{dataValues.dataVencimento}}</td>
+                                                                                    <td class="pt-3-half number vencimento" >{{dataValues.dataVencimento}}</td>
+                                                                                    <td class="pt-3-half one horario" contenteditable="true">{{dataValues.horario}}</td>
+                                                                                    
+                                                                                   
+                                                                                    
+                                                                                </tr>
+
+                                                                                {{/each}}
+                                                                                
+                                                                                
+                                                                                
+                                                                                </tbody>
+                                                                            </table>
+                                                                            </div>                                                      
+                                                 
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__item" id="team-link">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            
+                                             <img style="width: 40%;margin-left:30%; margin-top:-25%" src="/img/treino.png">
+                                            <span class="tm-nav-text">Treinos</span>
+                                            <div class="product__bg"></div>            
+                                        </div>                                     
+                                        <div class="product__description">
+                                            <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">Alunos e Treinos</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-12">
+                                                        <p>Clique sobre um aluno para definir seu plano de treino</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                      
+                                                            <div class="row">
+                                                                <div class="form-group col-md-6 col-lg-6 col-xl-6">
+                                                                  <input type="text" id="contact_name" name="contact_name" class="form-control pesquisaTreino" placeholder="Pesquise aqui..."  required/>
+                                                                </div>
+                                                                
+                                                               
+                                                            </div>  
+                                                            <div id="table" class="table-editable">
+      
+                                                                            <table class="table  table-responsive-md  text-center">
+                                                                                <thead>
+                                                                                <tr>
+                                                                              
+                                                                                    <th class="text-center">Aluno</th>
+                                                                                    <th class="text-center">Treino</th>
+                                                                             
+                                                                                    
+                                                                                    
+                                                                                
+                                                                                </tr>
+                                                                                <style>
+                                                                                
+                                                                                </style>
+                                                                                </thead>
+                                                                                <tbody id="conteudo">
+                                                                                    {{#each CLIENTES}}
+                                                                               <tr numero="{{dataValues.num_identificador}}" treino="{{dataValues.treinos}}" style="color: orange" class="treino">                                                                                   
+                                                                                    <td class="pt-3-half one nome" >{{dataValues.nome}}</td>    
+                                                                                 
+                                                                                    <td class="pt-3-half treinoCurto" >{{dataValues.tipoTreino}}</td>    
+                                                                                </tr>
+                                                                               {{/each}}
+                                                                                
+                                                                                
+                                                                                </tbody>
+                                                                            </table>
+                                                                            </div>                                                      
+                                                 
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="grid__item">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                            <img style="width: 40%;margin-left:30%" src="/img/catraca.png">
+                                            <span class="tm-nav-text">Catraca</span>
+                                            <div class="product__bg"></div>             
+                                        </div>                                                                 
+                                        <div class="product__description">
+                                            <div class="p-sm-4 p-2">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">Liberar a Catraca?</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                            <button id="envia" class="btn btn-success tm-btn-submit liberaCatraca">SIM</button>
+                                                            <button id="envia" class="btn btn-info tm-btn-submit">NÃO</button>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>       
+                                    </div>
+                                </div>
+
+                                <div class="grid__item">
+                                    <div class="product">
+                                        <div class="tm-nav-link">
+                                             <img style="width: 40%;margin-left:30%" src="/img/horario1.png">
+                                            <span class="tm-nav-text">Horários</span>
+                                            <div class="product__bg"></div>             
+                                        </div>                                                              
+                                         <div class="product__description">
+                                            <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">Horários Disponíveis</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-12">
+                                                        
+                                                        <p style="color: yellow;">Para incluir um novo horário clique no botão verde...</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                      
+                                                            <div class="row">
+                                                              
+                                                                <div class="form-group col-md-6 col-lg-6 col-xl-6">
+                                                                   <span class="table-add float-right mb-3 mr-2 incluiHorarios" style="cursor: pointer;"><a  class="text-success "><i
+                                                                                    class="fas fa-plus fa-2x"  aria-hidden="true"></i></a></span>
+                                                                </div>
+                                                             
+                                                               
+                                                            </div>  
+                                                            <p>Lista dos horários disponíveis:</p>
+                                                            <div id="table" class="table-editable">
+                                                                
+      
+                                                                            <table class="table table-responsive-md  text-center">
+                                                                                <thead>
+                                                                                <tr>
+                                                                                    <th class="text-center">Descrição</th>
+                                                                                    <th class="text-center">Início</th>
+                                                                                    <th class="text-center">Término</th>
+                                                                                    <th class="text-center">Dia da Semana</th>
+                                                                                
+                                                                                    
+                                                                                
+                                                                                </tr>
+                                                                                <style>
+                                                                                
+                                                                                </style>
+                                                                                </thead>
+                                                                                <tbody class="conteudoHorario">
+                                                                                    {{#each HORARIOS}}
+                                                                                <tr class="horario">
+                                                                                    <td class="pt-3-half one descricaoP" >{{dataValues.descricao}}</td>
+                                                                                    <td class="pt-3-half one comecaP" >{{dataValues.comeca}}</td>
+                                                                                    <td class="pt-3-half one terminaP" >{{dataValues.termina}}</td>
+                                                                                    <td class="pt-3-half number horarioP" >{{dataValues.horario}}</td>
+                                                                                    <td style="display: none;" class="pt-3-half number id" >{{dataValues.id}}</td>
+                                                                  
+                                                                                    
+                                                                                
+                                                                                    
+                                                                                </tr>
+                                                                                {{/each}}
+                                                                                
+                                                                                
+                                                                                </tbody>
+                                                                            </table>
+                                                                            </div>                                                      
+                                                 
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                                <div class="grid__item" id="team-link">
+                                    <div class="product">
+                                        <div style="border:1px solid  #00ff00" class="tm-nav-link">
+                                            
+                                              <img class="icones" style="width: 40%;margin-left:30%; margin-top: -25%" src="/img/ativo.png">
+                                            <span style="color: #00ff00;" class="tm-nav-text">Ativos<br>{{TOTAL_ATIVOS}} alunos</span>
+                                            <div class="product__bg"></div>            
+                                        </div>                                     
+                                      <div class="product__description">
+                                            <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">Alunos Ativos<br>{{TOTAL_ATIVOS}} alunos</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-12">
+                                                        <p>Lista de alunos ordenada do mais antigo para o mais recente.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                      
+                                                            <div class="row">
+                                                                <div class="form-group col-md-6 col-lg-6 col-xl-6">
+                                                                  <input type="text" id="contact_name" name="contact_name" class="form-control pesquisaAtivo" placeholder="Pesquise aqui..."  required/>
+                                                                </div>
+                                                               
+                                                               
+                                                            </div>  
+                                                            <div id="table" class="table-editable">
+      
+                                                                            <table class="table  table-responsive-md  text-center">
+                                                                                <thead>
+                                                                                <tr>
+                                                                                    <th class="text-center">Nº</th>
+                                                                                    <th class="text-center">Nome</th>
+											<th class="text-center">Telefone</th>
+                                                                                    <th class="text-center">Situação</th>
+                                                                                    <th class="text-center">Vencimento</th>
+                                                                                    <th class="text-center">Horário</th>
+                                                                                    
+                                                                                
+                                                                                </tr>
+                                                                                <style>
+                                                                                
+                                                                                </style>
+                                                                                </thead>
+                                                                                <tbody id="conteudo">
+
+                                                                                    {{#each CLIENTES_ATIVOS}}
+                                                                                <tr numero="{{dataValues.num_identificador}}" style="color: lightgreen" class="ativo">
+                                                                                    <td class="pt-3-half one numero" >{{dataValues.num_identificador}}</td>
+                                                                                    <td class="pt-3-half one nome" >{{dataValues.nome}}</td>
+											<td class="pt-3-half one telefone" >{{dataValues.telefone}}</td>
+                                                                                    <td class="pt-3-half one situacao" >{{dataValues.dataVencimento}}</td>
+                                                                                    <td class="pt-3-half number vencimento" >{{dataValues.dataVencimento}}</td>
+                                                                                    <td class="pt-3-half one horario" contenteditable="true">{{dataValues.horario}}</td>
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                </tr>
+
+                                                                                {{/each}}
+                                                                            
+                                                                                
+                                                                                
+                                                                                </tbody>
+                                                                            </table>
+                                                                            </div>                                                      
+                                                 
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="grid__item">
+                                    <div class="product">
+                                        <div style="border:1px solid  orange" class="tm-nav-link">
+                                             <img class="icones" style="width: 40%;margin-left:30%; margin-top: -25%" src="/img/atrasado.png">
+                                            <span style="color: orange;" class="tm-nav-text">Atrasados<br>{{TOTAL_ATRASADOS}} alunos</span>
+                                            <div class="product__bg"></div>             
+                                        </div>                                                                 
+                                        <div class="product__description">
+                                            <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">Alunos Com Pagamento Atrasado<br>{{TOTAL_ATRASADOS}} alunos</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-12">
+                                                        <p>Lista de alunos ordenada do mais antigo para o mais recente.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                      
+                                                            <div class="row">
+                                                                <div class="form-group col-md-6 col-lg-6 col-xl-6">
+                                                                  <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Pesquise aqui..."  required/>
+                                                                </div>
+                                                              
+                                                               
+                                                            </div>  
+                                                            <div id="table" class="table-editable">
+      
+                                                                            <table class="table  table-responsive-md  text-center">
+                                                                                <thead>
+                                                                                <tr>
+                                                                                    <th class="text-center">Nº</th>
+                                                                                    <th class="text-center">Nome</th>
+											 <th class="text-center">Telefone</th>
+                                                                                    <th class="text-center">Situação</th>
+                                                                                    <th class="text-center">Vencimento</th>
+                                                                                    <th class="text-center">Categoria</th>
+                                                                                    
+                                                                                
+                                                                                </tr>
+                                                                                <style>
+                                                                                
+                                                                                </style>
+                                                                                </thead>
+                                                                                <tbody id="conteudo">
+                                                                              {{#each CLIENTES_INADIMPLENTES}}
+                                                                                <tr numero="{{dataValues.num_identificador}}" style="color: red;" class="renova">
+                                                                                    <td class="pt-3-half one numero" >{{dataValues.num_identificador}}</td>
+                                                                                    <td class="pt-3-half one nome" >{{dataValues.nome}}</td>
+											<td class="pt-3-half one telefone" >{{dataValues.telefone}}</td>
+                                                                                    <td class="pt-3-half one situacao" >Atrasado</td>
+                                                                                    <td class="pt-3-half number vencimento" >{{dataValues.dataVencimento}}</td>
+                                                                                    <td class="pt-3-half one horario" contenteditable="true">{{dataValues.horario}}</td>
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                </tr>
+                                                                                {{/each}}
+                                                                                
+                                                                                </tbody>
+                                                                            </table>
+                                                                            </div>                                                      
+                                                 
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>     
+                                    </div>
+                                </div>
+                                 <div class="grid__item" id="home-link">
+                                    <div class="product">
+                                        <div style="border:1px solid  yellow" class="tm-nav-link">
+                                           
+                                            <span style="color: yellow;" class="tm-nav-text">A vencer em<br> 7 dias
+                                                <br>Nº alunos: {{TOTAL_VENCENDO}}
+                                            </span>
+                                            <div class="product__bg"></div>        
+                                        </div>                                    
+                                       <div class="product__description">
+                                            <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">A vencer em 7 dias</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-12">
+                                                        <p>Lista de alunos com mensalidades a vencer nos próximos 7 dias.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                      
+                                                            <div class="row">
+                                                                <div class="form-group col-md-6 col-lg-6 col-xl-6">
+                                                                  <input type="text" id="pesquisaRenova" name="contact_name" class="form-control pesquisaRenova" placeholder="Pesquise aqui..."  />
+                                                                </div>
+                                                           
+                                                            </div>  
+                                                            <div id="table" class="table-editable">
+      
+                                                                            <table class="table  table-responsive-md text-center">
+                                                                                <thead>
+                                                                                <tr>
+                                                                                    <th class="text-center">Nº</th>
+                                                                                    <th class="text-center">Nome</th>
+                                                                                    <th class="text-center">Situação</th>
+                                                                                    <th class="text-center">Vencimento</th>
+                                                                                    <th class="text-center">Horário</th>
+                                                                                    
+                                                                                
+                                                                                </tr>
+                                                                                <style>
+                                                                                
+                                                                                </style>
+                                                                                </thead>
+                                                                                <tbody id="conteudoRenova">
+                                                                                    {{#each VENCENDO}}
+                                                                           
+                                                                                <tr style="color: lightgreen" class="renova">
+                                                                                    <td class="pt-3-half one numero" >{{dataValues.num_identificador}}</td>
+                                                                                    <td class="pt-3-half one nome" >{{dataValues.nome}}</td>
+                                                                                    <td class="pt-3-half one situacao" >{{dataValues.dataVencimento}}</td>
+                                                                                    <td class="pt-3-half number vencimento" >{{dataValues.dataVencimento}}</td>
+                                                                                    <td class="pt-3-half one horario" contenteditable="true">{{dataValues.horario}}</td>
+                                                                                    
+                                                                                   
+                                                                                    
+                                                                                </tr>
+
+                                                                                {{/each}}
+                                                                                
+                                                                                
+                                                                                
+                                                                                </tbody>
+                                                                            </table>
+                                                                            </div>                                                      
+                                                 
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="grid__item" id="home-link">
+                                    <div class="product">
+                                        <div style="border:1px solid  red" class="tm-nav-link">
+                                           
+                                            <span style="color: red;" class="tm-nav-text">Exclusão de alunos
+                                                <br>Nº alunos: {{TOTAL_CLIENTES}}
+                                            </span>
+                                            <div class="product__bg"></div>        
+                                        </div>                                    
+                                       <div class="product__description">
+                                            <div class="pt-sm-4 pb-sm-4 pl-sm-5 pr-sm-5 pt-2 pb-2 pl-3 pr-3">
+                                                <div class="row mb-3">
+                                                    <div class="col-12">
+                                                        <h2 class="tm-page-title">Exclusão de alunos</h2>        
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-12">
+                                                        <p>Clique sobre um aluno e use a senha para deleta-lo.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                      
+                                                            <div class="row">
+                                                                <div class="form-group col-md-6 col-lg-6 col-xl-6">
+                                                                  <input type="text" id="pesquisaRenova" name="contact_name" class="form-control pesquisaRenova" placeholder="Pesquise aqui..."  />
+                                                                </div>
+                                                           
+                                                            </div>  
+                                                            <div id="table" class="table-editable">
+      
+                                                                            <table class="table  table-responsive-md text-center">
+                                                                                <thead>
+                                                                                <tr>
+                                                                                    <th class="text-center">Nº</th>
+                                                                                    <th class="text-center">Nome</th>
+                                                                                    <th class="text-center">Situação</th>
+                                                                                    <th class="text-center">Vencimento</th>
+                                                                                    <th class="text-center">Horário</th>
+                                                                                    
+                                                                                
+                                                                                </tr>
+                                                                                <style>
+                                                                                
+                                                                                </style>
+                                                                                </thead>
+                                                                                <tbody id="conteudoRenova">
+                                                                                    {{#each CLIENTES}}
+                                                                           
+                                                                                <tr style="color: lightgreen" class="excluir">
+                                                                                    <td class="pt-3-half one numero" >{{dataValues.num_identificador}}</td>
+                                                                                    <td class="pt-3-half one nome" >{{dataValues.nome}}</td>
+                                                                                    <td class="pt-3-half one situacao" >{{dataValues.dataVencimento}}</td>
+                                                                                    <td class="pt-3-half number vencimento" >{{dataValues.dataVencimento}}</td>
+                                                                                    <td class="pt-3-half one horario" contenteditable="true">{{dataValues.horario}}</td>
+                                                                                    
+                                                                                   
+                                                                                    
+                                                                                </tr>
+
+                                                                                {{/each}}
+                                                                                
+                                                                                
+                                                                                
+                                                                                </tbody>
+                                                                            </table>
+                                                                            </div>                                                      
+                                                 
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> 
+                        </div>                       
+                    </div>
+                </div>                
+            </div>
+            <footer>
+          <div style="float: left;">
+              <img style="box-shadow: 0px 0px 15px white; width: 30px; border-radius: 5px; " src="/img/tmer.png"><br>
+                  <p class="small tm-copyright-text">Copyright &copy; <span class="tm-current-year">2021</span> PrintMER Dev Design. 
+                
+                </p>
+
+           </div>
+            </footer>
+        </div> <!-- .tm-main-content -->  
+    </div>
+    <!-- load JS -->
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>         <!-- https://jquery.com/ -->    
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->  
+    <script src="js/anime.min.js"></script>  
+                       <!-- http://animejs.com/ -->
+                       <script src="js/moment.js"></script>
+    <script src="js/main.js"></script>  
+    <script src="jquery.js"></script>
+
+
+
+
+    <script src="bundle.js" ></script>
+    <script src="propper.js" ></script>
+<script src="bootstrap.js" ></script>
+    <script src="bootbox.js"></script>
+    <script>
+
+      
+
+    </script>
+    <style>
+
+        .renova{
+            transition: background-color 1s, color 1s;
+            transition: color 1s;
+            cursor: pointer;
+        }
+        .renova:hover{
+            background-color: white;
+            color: black !important;
+        }
+
+       
+
+
+       .horario, .treino, .ativo, .aluno{
+            transition: background-color 1s, color 1s;
+            transition: color 1s;
+            cursor: pointer;
+        }
+      .aluno:hover{
+            background-color: white;
+            color: black !important;
+        }
+        .ativo:hover{
+            background-color: white;
+            color: black !important;
+        }
+        .treino:hover{
+            background-color: white;
+            color: black !important;
+        }
+        .horario:hover{
+            background-color: white;
+            color: black !important;
+        }
+         
+
+    </style>
+
+    <script>
+
+       
+
+
+
+
+
+
+      
+function clicou(){
+   // bootbox.alert("dsadsad")
+}
+
+        function setupFooter() {
+            var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
+
+            var main = $('.tm-main-content');
+
+            if($(window).height() < pageHeight) {
+                main.addClass('tm-footer-relative');
+            }
+            else {
+                main.removeClass('tm-footer-relative');   
+            }
+        }
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            setupFooter();
+
+            $(window).resize(function(){
+                setupFooter();
+            });
+
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+   
+
+
+    </script>             
+
+</body>
+</html>

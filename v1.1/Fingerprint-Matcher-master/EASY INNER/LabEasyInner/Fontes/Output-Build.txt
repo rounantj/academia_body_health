@@ -1,0 +1,37 @@
+﻿1>------ Build started: Project: easyInner2, Configuration: Debug Any CPU ------
+1>C:\HEALTH\Fingerprint-Matcher-master\EASY INNER\LabEasyInner\Fontes\Controle\NitgenController.cs(24,22,24,38): warning CS0649: Field 'NitgenController.m_OpenedDeviceID' is never assigned to, and will always have its default value 0
+1>C:\HEALTH\Fingerprint-Matcher-master\EASY INNER\LabEasyInner\Fontes\Controle\NitgenController.cs(25,34,25,43): warning CS0649: Field 'NitgenController.m_hNewFIR' is never assigned to, and will always have its default value null
+1>C:\HEALTH\Fingerprint-Matcher-master\EASY INNER\LabEasyInner\Fontes\Controle\NitgenController.cs(28,44,28,53): warning CS0649: Field 'NitgenController.m_textFIR' is never assigned to, and will always have its default value null
+1>C:\HEALTH\Fingerprint-Matcher-master\EASY INNER\LabEasyInner\Fontes\Controle\NitgenController.cs(27,33,27,40): warning CS0649: Field 'NitgenController.m_biFIR' is never assigned to, and will always have its default value null
+1>C:\HEALTH\Fingerprint-Matcher-master\EASY INNER\LabEasyInner\Fontes\Controle\NitgenController.cs(30,43,30,54): warning CS0649: Field 'NitgenController.m_WinOption' is never assigned to, and will always have its default value null
+1>  easyInner2 -> C:\HEALTH\Fingerprint-Matcher-master\EASY INNER\LabEasyInner\Fontes\bin\Debug\EasyInnerSDK.exe
+2>------ Build started: Project: Fingerprint_Matcher, Configuration: Debug Any CPU ------
+2>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1819,5): warning MSB3270: There was a mismatch between the processor architecture of the project being built "MSIL" and the processor architecture of the reference "C:\HEALTH\Fingerprint-Matcher-master\EASY INNER\LabEasyInner\Fontes\bin\Debug\EasyInnerSDK.exe", "x86". This mismatch may cause runtime failures. Please consider changing the targeted processor architecture of your project through the Configuration Manager so as to align the processor architectures between your project and references, or take a dependency on references with a processor architecture that matches the targeted processor architecture of your project.
+2>C:\HEALTH\Fingerprint-Matcher-master\Conexao.cs(109,30,109,34): warning CS0168: The variable 'erro' is declared but never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Conexao.cs(160,30,160,34): warning CS0168: The variable 'erro' is declared but never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Body.cs(103,27,103,31): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.
+2>C:\HEALTH\Fingerprint-Matcher-master\Body.cs(727,30,727,33): warning CS0168: The variable 'err' is declared but never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Body.cs(35,22,35,26): warning CS0169: The field 'Body.xml2' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Body.cs(33,34,33,39): warning CS0169: The field 'Body.myBit' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Main.cs(19,16,19,23): warning CS0169: The field 'Main.bitmap1' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Cadastrar.cs(26,16,26,20): warning CS0169: The field 'Cadastrar.xml1' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Main.cs(23,30,23,38): warning CS0169: The field 'Main.featureB' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Main.cs(21,22,21,26): warning CS0169: The field 'Main.xml2' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Main.cs(19,34,19,39): warning CS0169: The field 'Main.myBit' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Main.cs(23,20,23,28): warning CS0169: The field 'Main.featureA' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Cadastrar.cs(26,22,26,26): warning CS0169: The field 'Cadastrar.xml2' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Body.cs(35,16,35,20): warning CS0169: The field 'Body.xml1' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Body.cs(564,44,564,53): warning CS0169: The field 'Body.syncTimer' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Body.cs(33,16,33,23): warning CS0169: The field 'Body.bitmap1' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Cadastrar.cs(24,41,24,47): warning CS0169: The field 'Cadastrar.myBit2' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Body.cs(39,20,39,28): warning CS0169: The field 'Body.featureA' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Body.cs(39,30,39,38): warning CS0169: The field 'Body.featureB' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Cadastrar.cs(24,34,24,39): warning CS0169: The field 'Cadastrar.myBit' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Cadastrar.cs(24,25,24,32): warning CS0169: The field 'Cadastrar.bitmap2' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Main.cs(21,16,21,20): warning CS0169: The field 'Main.xml1' is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Body.cs(31,13,31,18): warning CS0414: The field 'Body.conta' is assigned but its value is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Cadastrar.cs(25,16,25,28): warning CS0414: The field 'Cadastrar.currentImage' is assigned but its value is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Main.cs(20,16,20,28): warning CS0414: The field 'Main.currentImage' is assigned but its value is never used
+2>C:\HEALTH\Fingerprint-Matcher-master\Body.cs(34,16,34,28): warning CS0414: The field 'Body.currentImage' is assigned but its value is never used
+2>  Fingerprint_Matcher -> C:\HEALTH\Fingerprint-Matcher-master\bin\Debug\Fingerprint_Matcher.exe
+========== Build: 2 succeeded, 0 failed, 4 up-to-date, 0 skipped ==========
